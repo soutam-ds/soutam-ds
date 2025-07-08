@@ -1,5 +1,6 @@
 from airflow.sdk import dag
 from airflow.providers.common.sql.operators.sql import SQLExecuteQueryOperator
+from airflow.sdk.bases.sensor import PokeReturnValue
 
 @dag
 def user_processing():
@@ -17,5 +18,7 @@ def user_processing():
         )
         """
     )
+@task.sensor(poke_interval=30, timeout=300)
+
     
 user_processing()
