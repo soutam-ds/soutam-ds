@@ -1,0 +1,17 @@
+{"timestamp":"2025-07-09T18:49:23.488138","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:49:29.683177","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:50:00.666530","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:50:31.094218","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:51:01.567696","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:51:32.005747","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:52:02.474161","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:52:32.931267","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:53:03.374421","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:53:33.833634","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:54:08.358276","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:54:39.174069","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:55:03.536446","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:55:33.957867","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:56:04.415407","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:56:34.813557","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-09T18:57:05.275462","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}

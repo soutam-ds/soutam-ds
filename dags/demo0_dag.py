@@ -5,7 +5,7 @@ from datetime import datetime, timedelta
 with DAG(
     dag_id="example_dag",
     start_date=datetime(2025, 7, 8),
-    schedule_interval="@daily",
+    schedule="@daily", #schedule_interval changed with schedule string in airflow 2.9
     catchup=False,
 ) as dag:
 
