@@ -1,12 +1,12 @@
-from airflow.sdk import DAG,task
+from airflow.decorators import dag,task
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from datetime import datetime
 import pandas as pd
 from io import StringIO
 
-@DAG(
-    dag_id="user_processing",
-    start_date=datetime(2025,7,1),
+@dag(
+    dag_id="s3_etl",
+    start_date=datetime(2025, 7, 1),
     schedule="@daily",
     catchup=False,
 )
@@ -28,12 +28,17 @@ def s3_etl():
         file_content = s3_hook.read_key(key=file_key, bucket_name='stm-np-all-landing')
         
         # Assuming the file is a CSV
-        df = pd.read_csv(StringIO(file_content))
+        try:
+            df = pd.read_csv(StringIO(file_content))
+        except pd.errors.EmptyDataError:
+            print(f"File {file_key} has no columns to parse. Skipping.")
+            return f"{file_key} has no columns"
         # Perform any processing on the DataFrame here
         processed_data = df.head()
         return file_key
     
     list_files = read_s3_file()
-    read_s3_file.expand(file_key=list_files)
+    process_file.expand(file_key=list_files) #expand helps in fanout the process to all files
+    
 
-s3_etl()
+s3_etl = s3_etl()
