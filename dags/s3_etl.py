@@ -18,6 +18,7 @@ def s3_etl():
         s3_hook = S3Hook(aws_conn_id='aws_s3_conn')
 
         files = s3_hook.list_keys(bucket_name='stm-np-all-landing', prefix='airflow_s3/')
+        print(f"Files found: {files}")
         if not files:
             raise ValueError("No files found in the specified S3 bucket and prefix.")
         
@@ -39,6 +40,6 @@ def s3_etl():
     
     list_files = read_s3_file()
     process_file.expand(file_key=list_files) #expand helps in fanout the process to all files
-    
+    read_s3_file >> process_file
 
 s3_etl = s3_etl()
