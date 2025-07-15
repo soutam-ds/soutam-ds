@@ -5,9 +5,9 @@ import pandas as pd
 from io import StringIO
 from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
-landing = Dataset("s3://stm-np-all-landing/airflow_s3/")
+landing = Dataset("s3://stm-np-all-landing/airflow_s3/") # Define the dataset for downstream dependency
 
-@dag(start_date=datetime(2025,7,1), schedule_interval=None, catchup=False,)
+@dag(start_date=datetime(2025,7,1), schedule=None, catchup=False,)
 def dataset_upstream():
     @task(outlets={"landing": landing})
     def write_to_s3():

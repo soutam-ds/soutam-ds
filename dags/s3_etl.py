@@ -4,11 +4,11 @@ from datetime import datetime
 import pandas as pd
 from io import StringIO
 from airflow.datasets import Dataset
-
+landing = Dataset("s3://stm-np-all-landing/airflow_s3/") #define the dataset for upstream dependency
 @dag(
     dag_id="s3_etl",
     start_date=datetime(2025, 7, 1),
-    schedule=["landing"],
+    schedule=[landing], # Using the landing dataset as a trigger for this DAG
     catchup=False,
 )
 
@@ -41,6 +41,6 @@ def s3_etl():
     
     list_files = read_s3_file()
     process_file.expand(file_key=list_files) #expand helps in fanout the process to all files
-    read_s3_file >> process_file
+    
 
 s3_etl = s3_etl()
