@@ -1,6 +1,9 @@
 from airflow.datasets import Dataset
 from airflow.decorators import dag, task
 from datetime import datetime
+import pandas as pd
+from io import StringIO
+from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 
 landing = Dataset("s3://stm-np-all-landing/airflow_s3/")
 
@@ -8,9 +11,7 @@ landing = Dataset("s3://stm-np-all-landing/airflow_s3/")
 def dataset_upstream():
     @task(outlets={"landing": landing})
     def write_to_s3():
-        import pandas as pd
-        from io import StringIO
-        from airflow.providers.amazon.aws.hooks.s3 import S3Hook
+        
 
         # Create a sample DataFrame
         data = {

@@ -520,3 +520,6 @@
 {"timestamp":"2025-07-15T19:19:51.346356","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-15T19:23:54.122758","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-15T19:35:01.907671","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:35:32.373115","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:36:02.715786","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:36:33.102477","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/gituser_process.py","logger":"airflow.models.dagbag.DagBag"}
