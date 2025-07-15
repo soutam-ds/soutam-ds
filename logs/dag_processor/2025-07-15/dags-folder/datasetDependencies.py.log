@@ -189,3 +189,7 @@
 {"timestamp":"2025-07-15T19:19:51.343210","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-15T19:35:01.907693","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
 {"timestamp":"2025-07-15T19:36:02.680582","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:42:16.660647","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:42:47.862226","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:43:18.502308","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-07-15T19:43:49.419985","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/datasetDependencies.py","logger":"airflow.models.dagbag.DagBag"}

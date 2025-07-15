@@ -3,17 +3,18 @@ from airflow.providers.amazon.aws.hooks.s3 import S3Hook
 from datetime import datetime
 import pandas as pd
 from io import StringIO
+from airflow.datasets import Dataset
 
 @dag(
     dag_id="s3_etl",
     start_date=datetime(2025, 7, 1),
-    schedule="@daily",
+    schedule=["landing"],
     catchup=False,
 )
 
 def s3_etl():
 
-    @task
+    @task()
     def read_s3_file():
         s3_hook = S3Hook(aws_conn_id='aws_s3_conn')
 
